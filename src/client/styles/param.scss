@@ -1,0 +1,16 @@
+/*Main colors*/
+$mainText-col: #ffffff;
+$ctrlButton-col: #ffffff;
+$background-col: #333333;
+$panel-col: darken($background-col, 20%);
+$border-col: lighten($background-col, 20%);
+$pdigit-col: #9bce35;
+$remove-col: #e93f33;
+
+/*Sizes*/
+$mainWidth: 450px;
+
+/*Typography*/
+$timer-fs: 64px;
+$table-fs: 26px;
+$tableRow-fs: $table-fs + 10;

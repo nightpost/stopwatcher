@@ -1,0 +1,138 @@
+@import 'param';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $background-col;
+}
+
+table {
+	width: $mainWidth;
+	margin: 30px 0px;
+	color: $mainText-col;
+}
+
+tr {
+	height: $tableRow-fs;
+	margin: 10px 0px;
+	border-bottom: 1px solid $border-col;
+
+	&:last-child {
+		border-bottom: 0;
+	}
+}
+
+td {
+	height: $tableRow-fs;
+	line-height: $tableRow-fs;
+	padding: 10px 0;
+
+	.lap-time{
+		width: 25%;
+
+		span{
+			font-size: $table-fs;
+			line-height: $table-fs;
+			padding: 3px;
+		}
+	}
+
+	.comment {
+		input {
+			width: 100%;
+			background-color: $mainText-col;
+			border: 1px solid $mainText-col;
+		}
+		span{
+			font-size: $table-fs;
+			line-height: $table-fs;
+			padding: 3px;
+		}
+	}
+
+	.remove-button {
+		width: 20%;
+
+		button {
+			width: 100%;
+			padding: 3px;
+			display: block;
+			margin: 0 auto;
+			background: $remove-col;
+			border: 0;
+		}
+	}
+}
+
+#stopwatch {
+	margin: 20px auto;
+	width: $mainWidth;
+}
+
+#timer {
+	width: $mainWidth;
+	height: 200px;
+}
+
+#time {
+	background-color: $panel-col;
+	width: $mainWidth;
+	height: 65%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	box-shadow: 0 0 4px 1px darken($panel-col, 10%) inset;
+}
+
+div#time {
+	div {
+		position: relative;
+		top: 25%;
+		margin: 0 auto;
+		width: 56%;
+		height: 50%;
+
+		h1 {
+			font-size: $timer-fs;
+			line-height: $timer-fs;
+			color: $pdigit-col;
+		}
+	}
+}
+
+#control {
+	background-color: $ctrlButton-col;
+	width: $mainWidth;
+	height: 35%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+	div {
+		float: left;
+	}
+
+	&:first-child {
+		border-bottom-left-radius: 10px;
+	}
+}
+
+#clear, #launch, #lap {
+	float: left;
+	height: 100%;
+}
+
+#clear {
+	width: 25%;
+}
+
+#launch {
+	width: 55%;
+	border-left: 1px solid darken($ctrlButton-col, 10%);
+}
+
+#lap {
+	width: 20%;
+	border-left: 1px solid darken($ctrlButton-col, 10%);
+}
